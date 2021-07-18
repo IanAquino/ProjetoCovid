@@ -37,7 +37,7 @@ class TabelaPacientes(db: SQLiteDatabase) {
 
          var posColunaNomeVacina = -1 // -1 indica que a coluna não foi pedida
          for (i in 0..ultimaColuna) {
-             if (columns[i] == CAMPO_EXTERNO_NOME_VACINA) {
+             if (columns[i] == CAMPO_NOME_VACINA) {
                  posColunaNomeVacina = i
                  break
              }
@@ -52,7 +52,7 @@ class TabelaPacientes(db: SQLiteDatabase) {
              if (i > 0) colunas += ","
 
              colunas += if (i == posColunaNomeVacina) {
-                 "${TabelaVacinas.NOME_TABELA}.${TabelaVacinas.CAMPO_NOME_VACINA} AS $CAMPO_EXTERNO_NOME_VACINA"
+                 "${TabelaVacinas.NOME_TABELA}.${TabelaVacinas.CAMPO_NOME_VACINA} AS $CAMPO_NOME_VACINA"
              } else {
                  "${NOME_TABELA}.${columns[i]}"
              }
@@ -83,9 +83,9 @@ class TabelaPacientes(db: SQLiteDatabase) {
         const val CAMPO_NUMERO_UTENTE = "Numeroutente"
         const val CAMPO_DATA_NASCIMENTO = "DataNascimento"
         const val CAMPO_ID_VACINA = "IdVacina"
-        const val CAMPO_EXTERNO_NOME_VACINA = "NomeVacina"
+        const val CAMPO_NOME_VACINA = "NomeVacina"
 
 
-        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME_PACIENTE, CAMPO_NUMERO_UTENTE, CAMPO_DATA_NASCIMENTO, CAMPO_ID_VACINA, CAMPO_EXTERNO_NOME_VACINA)
+        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME_PACIENTE, CAMPO_NUMERO_UTENTE, CAMPO_DATA_NASCIMENTO, CAMPO_ID_VACINA, CAMPO_NOME_VACINA)
     }
 }

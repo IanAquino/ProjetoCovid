@@ -10,7 +10,7 @@ class TabelaLocais(db: SQLiteDatabase) {
 
 
     fun cria(){
-        db.execSQL("CREATE TABLE $NOME_TABELA (${BaseColumns._ID} INTEGER PRIMARY KEY AUTOINCREMENT, $NOME_local TEXT NOT NULL, $CODIGO_POSTAL TEXT NOT NULL)")
+        db.execSQL("CREATE TABLE $NOME_TABELA (${BaseColumns._ID} INTEGER PRIMARY KEY AUTOINCREMENT, $NOME_LOCAL TEXT NOT NULL, $CODIGO_POSTAL TEXT NOT NULL)")
     }
 
     fun insert(values: ContentValues): Long {
@@ -40,13 +40,13 @@ class TabelaLocais(db: SQLiteDatabase) {
 
     companion object{
         const val NOME_TABELA = "locals"
-        const val NOME_local = "Nomelocal"
+        const val NOME_LOCAL = "Nomelocal"
         const val CODIGO_POSTAL = "CodigoPostal"
 
 
 
 
-        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, NOME_local, CODIGO_POSTAL)
+        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, NOME_LOCAL, CODIGO_POSTAL)
 
     }
 }
