@@ -2,6 +2,7 @@ package com.example.projetocovid
 import android.content.ContentValues
 import android.database.Cursor
 import android.provider.BaseColumns
+import pt.ipg.projetocovid.TabelaPacientes
 
 data class Paciente(var id: Long = -1, var nome: String, var dnascimento: String, var numeroutente: String, var idVacina: Long, var nomeVacina: String? = null) {
     fun toContentValues(): ContentValues{
@@ -22,7 +23,7 @@ data class Paciente(var id: Long = -1, var nome: String, var dnascimento: String
             val colunaDatanascimento = cursor.getColumnIndex(TabelaPacientes.CAMPO_DATA_NASCIMENTO)
             val colunaNumeroutente = cursor.getColumnIndex(TabelaPacientes.CAMPO_NUMERO_UTENTE)
             val colunaIdVacina = cursor.getColumnIndex(TabelaPacientes.CAMPO_ID_VACINA)
-            val colunaNomeVacina = cursor.getColumnIndex(TabelaPacientes.CAMPO_EXTERNO_NOME_VACINA)
+            val colunaNomeVacina = cursor.getColumnIndex(TabelaPacientes.CAMPO_NOME_VACINA)
 
             val id= cursor.getLong(colunaId)
             val nomepaciente= cursor.getString(colunaNomepaciente)
