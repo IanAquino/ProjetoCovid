@@ -9,7 +9,7 @@ class TabelaVacinas(db: SQLiteDatabase) {
     private val db: SQLiteDatabase = db
 
     fun cria() {
-        db.execSQL("CREATE TABLE $NOME_TABELA (${BaseColumns._ID} INTEGER PRIMARY KEY AUTOINCREMENT, $CAMPO_NOME_VACINA TEXT NOT NULL, $CAMPO_DATA INTEGER NOT NULL, $CAMPO_ID_local NUMERIC NOT NULL, FOREIGN KEY (${CAMPO_ID_local}) REFERENCES ${TabelaLocais.NOME_TABELA})")
+        db.execSQL("CREATE TABLE $NOME_TABELA (${BaseColumns._ID} INTEGER PRIMARY KEY AUTOINCREMENT, $CAMPO_NOME_VACINA TEXT NOT NULL, $CAMPO_DATA INTEGER NOT NULL, $CAMPO_ID_LOCAL NUMERIC NOT NULL, FOREIGN KEY (${CAMPO_ID_LOCAL}) REFERENCES ${TabelaLocais.NOME_TABELA})")
     }
 
     fun insert(values: ContentValues): Long {
@@ -36,7 +36,7 @@ class TabelaVacinas(db: SQLiteDatabase) {
 
         var posColunaNomelocal = -1 // -1 indica que a coluna não foi pedida
         for (i in 0..ultimaColuna) {
-            if (columns[i] == CAMPO_EXTERNO_NOME_local) {
+            if (columns[i] == CAMPO_NOME_LOCAL) {
                 posColunaNomelocal = i
                 break
             }
@@ -51,13 +51,13 @@ class TabelaVacinas(db: SQLiteDatabase) {
             if (i > 0) colunas += ","
 
             colunas += if (i == posColunaNomelocal) {
-                "${TabelaLocais.NOME_TABELA}.${TabelaLocais.NOME_local} AS $CAMPO_EXTERNO_NOME_local"
+                "${TabelaLocais.NOME_TABELA}.${TabelaLocais.NOME_LOCAL} AS $CAMPO_NOME_LOCAL"
             } else {
                 "${NOME_TABELA}.${columns[i]}"
             }
         }
 
-        val tabelas = "$NOME_TABELA INNER JOIN ${TabelaLocais.NOME_TABELA} ON ${TabelaLocais.NOME_TABELA}.${BaseColumns._ID}=$CAMPO_ID_local"
+        val tabelas = "$NOME_TABELA INNER JOIN ${TabelaLocais.NOME_TABELA} ON ${TabelaLocais.NOME_TABELA}.${BaseColumns._ID}=$CAMPO_ID_LOCAL"
 
         var sql = "SELECT $colunas FROM $tabelas"
 
@@ -78,12 +78,12 @@ class TabelaVacinas(db: SQLiteDatabase) {
         const val NOME_TABELA = "Vacina"
         const val CAMPO_NOME_VACINA = "NomeVacina"
         const val CAMPO_DATA = "Data"
-        const val CAMPO_ID_local = "Locais"
-        const val CAMPO_EXTERNO_NOME_local = "nome_categoria"
+        const val CAMPO_ID_LOCAL = "Locais"
+        const val CAMPO_NOME_LOCAL = "nome_categoria"
 
 
 
 
-        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME_VACINA, CAMPO_DATA, CAMPO_ID_local, CAMPO_EXTERNO_NOME_local)
+        val TODAS_COLUNAS = arrayOf(BaseColumns._ID, CAMPO_NOME_VACINA, CAMPO_DATA, CAMPO_ID_LOCAL, CAMPO_NOME_LOCAL)
     }
 }
