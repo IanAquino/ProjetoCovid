@@ -16,6 +16,8 @@ import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
+import pt.ipg.projetocovid.MainActivity
+import pt.ipg.projetocovid.TabelaLocais
 import pt.ipg.projetocovid.databinding.FragmentNovaVacinaBinding
 
 /**
@@ -79,31 +81,7 @@ class NovaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
             editTextDataVacina.requestFocus()
             return
         }
-
-        /*fun convertLongToTime(time: Long): String {
-            val date = Date(time)
-            val format = SimpleDateFormat("yyyy.MM.dd HH:mm")
-            return format.format(date)
-        }
-
-        val parsedDate = LocalDateTime.parse("2018-12-14T09:55:00", DateTimeFormatter.ISO_DATE_TIME)
-        val formattedDate = parsedDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"))
-
-        fun stringtodate() {
-            // Format y-M-d or yyyy-MM-d
-            val string = DataVacina
-            val date = LocalDate.parse(DataVacina, DateTimeFormatter.ISO_DATE)
-
-            println(DataVacina)
-        }*/
-
-        /*val dtStart : String = "2010-10-15";
-        val format = SimpleDateFormat("yyyy-MM-dd");
-        val date:Date? = try {
-            format.parse(DataVacina)
-        } catch (ParseException e) {
-            null
-        }*/
+        
 
 
         val idlocal = spinnerlocals.selectedItemId
@@ -147,7 +125,7 @@ class NovaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
             ContentProviderActivity.ENDEREÇO_LOCALIZACAO,
             TabelaLocais.TODAS_COLUNAS,
             null, null,
-            TabelaLocais.NOME_local
+            TabelaLocais.NOME_LOCAL
         )
     }
 
@@ -164,7 +142,7 @@ class NovaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
             requireContext(),
             android.R.layout.simple_list_item_1,
             data,
-            arrayOf(TabelaLocais.NOME_local),
+            arrayOf(TabelaLocais.NOME_LOCAL),
             intArrayOf(android.R.id.text1),
             0
         )
