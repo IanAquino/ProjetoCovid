@@ -9,6 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.example.projetocovid.DadosApp
 import com.example.projetocovid.R
 import pt.ipg.projetocovid.R.menu.*
 import pt.ipg.projetocovid.databinding.ActivityMainBinding
