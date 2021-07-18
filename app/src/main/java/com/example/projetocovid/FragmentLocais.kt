@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.projetocovid.ContentProviderActivity
 import com.example.projetocovid.DadosApp
 import com.example.projetocovid.R
-import pt.ipg.projetocovid.databinding.FragmentLocalBinding
+import com.example.projetocovid.databinding.FragmentLocalBinding
 
 class FragmentLocais : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
 

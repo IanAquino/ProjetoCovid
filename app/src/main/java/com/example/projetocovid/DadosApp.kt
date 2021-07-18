@@ -1,6 +1,7 @@
 package com.example.projetocovid
 
 import androidx.fragment.app.Fragment
+import pt.ipg.projetocovid.MainActivity
 
 class DadosApp {
     companion object {
