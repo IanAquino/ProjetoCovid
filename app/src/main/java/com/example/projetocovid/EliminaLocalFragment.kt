@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import pt.ipg.projetocovid.MainActivity
+import com.example.projetocovid.MainActivity
 
 
 class EliminaLocalFragment : Fragment() {

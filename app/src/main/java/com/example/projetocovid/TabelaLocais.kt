@@ -1,4 +1,4 @@
-package pt.ipg.projetocovid
+package com.example.projetocovid
 
 import android.content.ContentValues
 import android.database.Cursor

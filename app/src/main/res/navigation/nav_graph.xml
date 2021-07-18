@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/Fragmentpacientes"
-        android:name="pt.ipg.projetocovid.FragmentPacientes"
+        android:name="com.example.projetocovid.FragmentPacientes"
         android:label="@string/pacientes"
         tools:layout="@layout/fragment_pacientes">
 
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/NovopacienteFragment"
-        android:name="pt.ipg.projetocovid.NovoPacienteFragment"
+        android:name="com.example.projetocovid.NovoPacienteFragment"
         android:label="@string/Novo_Paciente"
         tools:layout="@layout/fragment_novo_paciente">
 
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentPaginaInicial"
-        android:name="pt.ipg.projetocovid.FragmentPaginaInicial"
+        android:name="com.example.projetocovid.FragmentPaginaInicial"
         android:label="Página Inicial"
         tools:layout="@layout/fragment_pagina_inicial">
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentVacinas22"
-        android:name="pt.ipg.projetocovid.FragmentVacinas"
+        android:name="com.example.projetocovid.FragmentVacinas"
         android:label="@string/Vacinas"
         tools:layout="@layout/fragment_vacinas">
         <action
@@ -63,7 +63,7 @@
     </fragment>
     <fragment
         android:id="@+id/novaVacinaFragment2"
-        android:name="pt.ipg.projetocovid.NovaVacinaFragment"
+        android:name="com.example.projetocovid.NovaVacinaFragment"
         android:label="@string/Nova_Vacina"
         tools:layout="@layout/fragment_nova_vacina">
         <action
@@ -72,7 +72,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentlocals2"
-        android:name="pt.ipg.projetocovid.FragmentLocais"
+        android:name="com.example.projetocovid.FragmentLocais"
         android:label="@string/local"
         tools:layout="@layout/fragment_local">
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/novalocalFragment"
-        android:name="pt.ipg.projetocovid.NovoLocalFragment"
+        android:name="com.example.projetocovid.NovoLocalFragment"
         android:label="@string/Novo_Local"
         tools:layout="@layout/fragment_novo_local">
         <action
@@ -96,7 +96,7 @@
     </fragment>
     <fragment
         android:id="@+id/editalocalFragment"
-        android:name="pt.ipg.projetocovid.EditaLocalFragment"
+        android:name="com.example.projetocovid.EditaLocalFragment"
         android:label="@string/Editar_local"
         tools:layout="@layout/fragment_edita_local">
         <action
@@ -105,7 +105,7 @@
     </fragment>
     <fragment
         android:id="@+id/eliminapacienteFragment"
-        android:name="pt.ipg.projetocovid.EliminaPacienteFragment"
+        android:name="com.example.projetocovid.EliminaPacienteFragment"
         android:label="@string/Elimina_paciente"
         tools:layout="@layout/fragment_elimina_paciente">
         <action
@@ -114,7 +114,7 @@
     </fragment>
     <fragment
         android:id="@+id/editapacienteFragment22"
-        android:name="pt.ipg.projetocovid.EditaPacienteFragment"
+        android:name="com.example.projetocovid.EditaPacienteFragment"
         android:label="@string/Editar_paciente"
         tools:layout="@layout/fragment_edita_paciente">
         <action
@@ -123,7 +123,7 @@
     </fragment>
     <fragment
         android:id="@+id/eliminaVacinaFragment"
-        android:name="pt.ipg.projetocovid.EliminaVacinaFragment"
+        android:name="com.example.projetocovid.EliminaVacinaFragment"
         android:label="@string/Elimina_Vacina"
         tools:layout="@layout/fragment_elimina_vacina">
         <action
@@ -132,7 +132,7 @@
     </fragment>
     <fragment
         android:id="@+id/editaVacinaFragment"
-        android:name="pt.ipg.projetocovid.EditaVacinaFragment"
+        android:name="com.example.projetocovid.EditaVacinaFragment"
         android:label="@string/Editar_Vacina"
         tools:layout="@layout/fragment_edita_vacina">
         <action
@@ -141,7 +141,7 @@
     </fragment>
     <fragment
         android:id="@+id/eliminalocalFragment"
-        android:name="pt.ipg.projetocovid.EliminaLocalFragment"
+        android:name="com.example.projetocovid.EliminaLocalFragment"
         android:label="@string/Elimina_local"
         tools:layout="@layout/fragment_elimina_local">
         <action

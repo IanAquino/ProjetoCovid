@@ -16,8 +16,8 @@ import androidx.loader.app.LoaderManager
 import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
-import pt.ipg.projetocovid.MainActivity
-import pt.ipg.projetocovid.TabelaVacinas
+import com.example.projetocovid.MainActivity
+import com.example.projetocovid.TabelaVacinas
 
 
 class EditaPacienteFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {

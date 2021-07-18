@@ -6,9 +6,9 @@ import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
 import android.provider.BaseColumns
-import pt.ipg.projetocovid.TabelaLocais
-import pt.ipg.projetocovid.TabelaPacientes
-import pt.ipg.projetocovid.TabelaVacinas
+import com.example.projetocovid.TabelaLocais
+import com.example.projetocovid.TabelaPacientes
+import com.example.projetocovid.TabelaVacinas
 
 class ContentProviderActivity : ContentProvider() {
     private var BdCovidOpenHelper : BdCovidOpenHelper? = null

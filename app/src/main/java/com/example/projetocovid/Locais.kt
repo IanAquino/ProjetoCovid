@@ -2,7 +2,7 @@ package com.example.projetocovid
 import android.content.ContentValues
 import android.database.Cursor
 import android.provider.BaseColumns
-import pt.ipg.projetocovid.TabelaLocais
+import com.example.projetocovid.TabelaLocais
 
 data class Locais(var id: Long = -1, var nome: String, var codigoPostal: String) {
     fun toContentValues() : ContentValues{

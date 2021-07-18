@@ -1,15 +1,13 @@
-package pt.ipg.projetocovid
+package com.example.projetocovid
 
 import android.database.Cursor
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetocovid.DadosApp
-import com.example.projetocovid.Paciente
-import com.example.projetocovid.R
+import pt.ipg.projetocovid.FragmentPacientes
 
-class AdapterPacientes(val fragment:FragmentPacientes) : RecyclerView.Adapter<AdapterPacientes.ViewHolderPacientes>(){
+class AdapterPacientes(val fragment: FragmentPacientes) : RecyclerView.Adapter<AdapterPacientes.ViewHolderPacientes>(){
     public var cursor: Cursor? = null
         get() = field
         set(value) {

@@ -1,4 +1,4 @@
-package pt.ipg.projetocovid
+package com.example.projetocovid
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -11,8 +11,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.example.projetocovid.DadosApp
 import com.example.projetocovid.R
-import pt.ipg.projetocovid.R.menu.*
-import pt.ipg.projetocovid.databinding.ActivityMainBinding
+import com.example.projetocovid.R.menu.*
+import com.example.projetocovid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

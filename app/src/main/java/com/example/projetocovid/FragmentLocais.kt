@@ -1,4 +1,4 @@
-package pt.ipg.projetocovid
+package com.example.projetocovid
 
 import android.database.Cursor
 import android.os.Bundle
@@ -13,9 +13,7 @@ import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.projetocovid.ContentProviderActivity
-import com.example.projetocovid.DadosApp
-import com.example.projetocovid.R
+import com.example.projetocovid.*
 import com.example.projetocovid.databinding.FragmentLocalBinding
 
 class FragmentLocais : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {

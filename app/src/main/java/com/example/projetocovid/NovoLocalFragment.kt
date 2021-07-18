@@ -14,9 +14,9 @@ import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import pt.ipg.projetocovid.MainActivity
-import pt.ipg.projetocovid.TabelaLocais
-import pt.ipg.projetocovid.databinding.FragmentNovoLocalBinding
+import com.example.projetocovid.MainActivity
+import com.example.projetocovid.TabelaLocais
+import com.example.projetocovid.databinding.FragmentNovoLocalBinding
 
 
 class NovoLocalFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {

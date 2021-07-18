@@ -1,4 +1,4 @@
-package pt.ipg.projetocovid
+package com.example.projetocovid
 
 import android.database.Cursor
 import android.view.View
@@ -9,7 +9,7 @@ import com.example.projetocovid.DadosApp
 import com.example.projetocovid.Locais
 import com.example.projetocovid.R
 
-class AdapterLocal (val fragment: pt.ipg.projetocovid.FragmentLocais): RecyclerView.Adapter<pt.ipg.projetocovid.AdapterLocal.ViewHolderLocal>() {
+class AdapterLocal (val fragment: com.example.projetocovid.FragmentLocais): RecyclerView.Adapter<com.example.projetocovid.AdapterLocal.ViewHolderLocal>() {
     public var cursor: Cursor? = null
         get() = field
         set(value) {

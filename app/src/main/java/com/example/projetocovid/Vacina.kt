@@ -3,7 +3,7 @@ package com.example.projetocovid
 import android.content.ContentValues
 import android.database.Cursor
 import android.provider.BaseColumns
-import pt.ipg.projetocovid.TabelaVacinas
+import com.example.projetocovid.TabelaVacinas
 
 data class Vacina(var id: Long = -1, var nomeVacina: String, var data: String, var idlocal: Long, var nomelocal: String? = null) {
     fun toContentValues() : ContentValues{
