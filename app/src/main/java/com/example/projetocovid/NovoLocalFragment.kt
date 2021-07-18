@@ -114,7 +114,7 @@ class NovoLocalFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
             ContentProviderActivity.ENDEREÇO_LOCALIZACAO,
             TabelaLocais.TODAS_COLUNAS,
             null, null,
-            TabelaLocais.NOME_local
+            TabelaLocais.NOME_LOCAL
         )
     }
 

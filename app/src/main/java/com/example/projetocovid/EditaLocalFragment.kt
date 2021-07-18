@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import pt.ipg.projetocovid.MainActivity
 
 
 class EditaLocalFragment : Fragment()  {
