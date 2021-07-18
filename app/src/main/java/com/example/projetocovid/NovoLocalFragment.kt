@@ -14,6 +14,8 @@ import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
+import pt.ipg.projetocovid.MainActivity
+import pt.ipg.projetocovid.TabelaLocais
 import pt.ipg.projetocovid.databinding.FragmentNovoLocalBinding
 
 
@@ -89,7 +91,7 @@ class NovoLocalFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
         }
         Toast.makeText(
             requireContext(),
-            "Locais gravada com sucesso",
+            "Locais gravados com sucesso",
             Toast.LENGTH_LONG
         ).show()
 

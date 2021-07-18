@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import pt.ipg.projetocovid.MainActivity
 
 
 class EliminaPacienteFragment : Fragment() {
@@ -41,7 +42,7 @@ class EliminaPacienteFragment : Fragment() {
 
         val paciente= DadosApp.pacienteSelecionado!!
         textViewNomepacienteEliminar.setText(paciente.nome)
-        textViewNumeropacienteEliminar.setText(paciente.nrpaciente)
+        textViewNumeropacienteEliminar.setText(paciente.numeroutente)
         textViewDatapacienteEliminar.setText(paciente.dnascimento)
         textViewVacinapacienteEliminar.setText(paciente.nomeVacina)
 
@@ -74,7 +75,7 @@ class EliminaPacienteFragment : Fragment() {
 
         Toast.makeText(
             requireContext(),
-            "Locais eliminado com sucesso",
+            "Locais eliminados com sucesso",
             Toast.LENGTH_LONG
         ).show()
 

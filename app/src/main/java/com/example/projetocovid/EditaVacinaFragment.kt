@@ -16,6 +16,7 @@ import androidx.loader.app.LoaderManager
 import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
+import pt.ipg.projetocovid.TabelaLocais
 
 
 class EditaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor>  {
@@ -124,7 +125,7 @@ class EditaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor>  {
             ContentProviderActivity.ENDEREÇO_LOCALIZACAO,
             TabelaLocais.TODAS_COLUNAS,
             null, null,
-            TabelaLocais.NOME_local
+            TabelaLocais.NOME_LOCAL
         )
     }
 
@@ -142,7 +143,7 @@ class EditaVacinaFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor>  {
             requireContext(),
             android.R.layout.simple_list_item_1,
             data,
-            arrayOf(TabelaLocais.NOME_local),
+            arrayOf(TabelaLocais.NOME_LOCAL),
             intArrayOf(android.R.id.text1),
             0
         )
