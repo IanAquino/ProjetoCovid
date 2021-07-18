@@ -19,6 +19,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.example.projetocovid.MainActivity
 import com.example.projetocovid.TabelaVacinas
 import com.example.projetocovid.databinding.FragmentNovoPacienteBinding
+import java.util.*
 
 
 /**
@@ -31,7 +32,7 @@ class NovoPacienteFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
     private lateinit var editTextNomepaciente: EditText
     private lateinit var editTextNumeroutente: EditText
     private lateinit var editTextDataNascimento: EditText
-    private lateinit var editTextCodigoPostal: EditText
+    //private lateinit var editTextCodigoPostal: EditText
     private lateinit var spinnerVacinas: Spinner
 
     private val binding get() = _binding!!
@@ -105,7 +106,7 @@ class NovoPacienteFragment : Fragment(), LoaderManager.LoaderCallbacks<Cursor> {
         val idVacina = spinnerVacinas.selectedItemId
 
 
-        val paciente= Paciente(nome = Novopaciente, numeroutente = numeroutente, dnascimento = dataNascimento, idVacina = idVacina)
+        val paciente= Paciente(nome = Novopaciente, numeroutente = numeroutente, dnascimento = dataNascimento , idVacina = idVacina)
 
         val uri = activity?.contentResolver?.insert(
             ContentProviderActivity.ENDEREÇO_pacientes,

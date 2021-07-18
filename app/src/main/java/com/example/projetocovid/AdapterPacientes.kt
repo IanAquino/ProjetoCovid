@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import pt.ipg.projetocovid.FragmentPacientes
+import com.example.projetocovid.FragmentPacientes
 
 class AdapterPacientes(val fragment: FragmentPacientes) : RecyclerView.Adapter<AdapterPacientes.ViewHolderPacientes>(){
     public var cursor: Cursor? = null
@@ -33,7 +33,7 @@ class AdapterPacientes(val fragment: FragmentPacientes) : RecyclerView.Adapter<A
             this.paciente = paciente
 
             textViewNome.text = paciente.nome
-            textViewDataNascimento.text = paciente.dnascimento
+            textViewDataNascimento.text = paciente.dnascimento.toString()
             textViewNumeroutente.text = paciente.numeroutente
             textViewVacinapaciente.text = paciente.nomeVacina
         }

@@ -3,6 +3,7 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.provider.BaseColumns
 import com.example.projetocovid.TabelaPacientes
+import java.sql.Date
 
 data class Paciente(var id: Long = -1, var nome: String, var dnascimento: String, var numeroutente: String, var idVacina: Long, var nomeVacina: String? = null) {
     fun toContentValues(): ContentValues{
@@ -32,7 +33,7 @@ data class Paciente(var id: Long = -1, var nome: String, var dnascimento: String
             val idVacina = cursor.getLong(colunaIdVacina)
             val nomeVacina = if (colunaNomeVacina != -1) cursor.getString(colunaNomeVacina) else null
 
-            return Paciente(id ,nomepaciente,datanascimento , numeroutente,idVacina, nomeVacina)
+            return Paciente(id ,nomepaciente, datanascimento , numeroutente,idVacina, nomeVacina)
 
         }
     }

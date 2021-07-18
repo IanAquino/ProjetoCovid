@@ -8,7 +8,7 @@
     tools:context=".EliminaLocalFragment">
 
     <TextView
-        android:id="@+id/textViewEliminaNomeLocalizacao"
+        android:id="@+id/textViewEliminaNomeLocal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -21,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewEliminaNomeLocalizacao2"
+        android:id="@+id/textViewEliminaNomeLocal2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEliminaNomeLocalizacao" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEliminaNomeLocal" />
 
     <TextView
         android:id="@+id/textViewEliminaCodigoPostal"
@@ -39,7 +39,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEliminaNomeLocalizacao2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEliminaNomeLocal2" />
 
     <TextView
         android:id="@+id/textViewEliminaCodigoPostal2"

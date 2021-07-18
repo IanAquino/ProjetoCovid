@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import com.example.projetocovid.MainActivity
 
 
 class EliminaLocalFragment : Fragment() {
@@ -33,7 +32,7 @@ class EliminaLocalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        textViewlocalEliminar = view.findViewById(R.id.textViewEliminaNomeLocalizacao2)
+        textViewlocalEliminar = view.findViewById(R.id.textViewEliminaNomeLocal2)
         textViewCodigoPostalEliminar = view.findViewById(R.id.textViewEliminaCodigoPostal2)
 
 

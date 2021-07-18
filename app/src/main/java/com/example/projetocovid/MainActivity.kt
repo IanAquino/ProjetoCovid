@@ -1,6 +1,8 @@
 package com.example.projetocovid
 
 import android.os.Bundle
+import android.system.Os.bind
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -9,12 +11,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.example.projetocovid.DadosApp
-import com.example.projetocovid.R
 import com.example.projetocovid.R.menu.*
 import com.example.projetocovid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
@@ -62,9 +64,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         val opcaoProcessada = when (item.itemId) {
 
             R.id.action_settings -> {

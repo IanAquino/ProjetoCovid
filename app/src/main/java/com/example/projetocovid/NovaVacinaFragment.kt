@@ -16,9 +16,9 @@ import androidx.loader.content.CursorLoader
 import androidx.loader.content.Loader
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import pt.ipg.projetocovid.MainActivity
-import pt.ipg.projetocovid.TabelaLocais
-import pt.ipg.projetocovid.databinding.FragmentNovaVacinaBinding
+import com.example.projetocovid.MainActivity
+import com.example.projetocovid.TabelaLocais
+import com.example.projetocovid.databinding.FragmentNovaVacinaBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
