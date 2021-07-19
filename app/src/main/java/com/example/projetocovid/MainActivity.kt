@@ -1,5 +1,6 @@
 package com.example.projetocovid
 
+import android.app.DatePickerDialog
 import android.os.Bundle
 import android.system.Os.bind
 import android.view.LayoutInflater
@@ -10,9 +11,11 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.DatePicker
 import android.widget.Toast
 import com.example.projetocovid.R.menu.*
 import com.example.projetocovid.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,12 +24,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var menu: Menu
+
     var menuAtual = menu_lista_pacientes
 
         set(value) {
             field = value
             invalidateOptionsMenu()
         }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -33,8 +33,8 @@
     <string name="alterar_vacina">alterar_vacina</string>
     <string name="eliminar_vacina">eliminar_vacina</string>
     <string name="Elimina_Vacina">Eliminar Vacina</string>
-    <string name="Elimina_paciente">Eliminar Vacina</string>
-    <string name="Elimina_local">Eliminar Vacina</string>
+    <string name="Elimina_paciente">Eliminar Paciente</string>
+    <string name="Elimina_local">Eliminar Local</string>
     <string name="Editar_local">Editar Local</string>
     <string name="Editar_paciente">Editar Paciente</string>
     <string name="Novo_Paciente">Novo Paciente</string>
